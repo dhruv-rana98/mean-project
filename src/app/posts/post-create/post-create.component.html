@@ -1,0 +1,11 @@
+<!-- <textarea rows="6" [value]="newPost"  #postInput></textarea> //[value] = "newPost" - Property Binding // postInput is a varible for getting value from the element -->
+<mat-card>
+    <mat-form-field>
+        <input matInput type="text" [(ngModel)] = "enteredTitle" >
+    </mat-form-field>
+    <mat-form-field>
+        <textarea matInput rows="6" [(ngModel)] = "enteredContent" ></textarea> <!--//Two Way data binding in angular -->
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="onAddPost()">Save Post</button>
+</mat-card>
+<!-- <p>{{newPost}}</p> //String InterPolation   -->
